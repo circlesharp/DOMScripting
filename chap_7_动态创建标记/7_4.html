@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+<body>
+  <div id="testdiv">
+    <p>This is <em>my</em> content.</p>
+  </div>
+  <script>
+    window.onload = function () {
+      let fragmentNode = document.createElement('div')
+      let fragmentTextNode = document.createTextNode('rtfm')
+      document.body.appendChild(fragmentNode)
+      fragmentNode.appendChild(fragmentTextNode)
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3_1</title>
+</head>
+<body>
+  <div title="i am a title" user-defined='a user defined title'>sth</div>
+  <script>
+    window.onload = function () {
+      let div = document.getElementsByTagName('div')[0]
+      let attr = div.getAttribute('title')
+      let attr2 = div.getAttribute('user-defined')
+      console.log(attr)
+      console.log(attr2)
+      setTimeout(() => { div.setAttribute('title', 'a new titil') }, 2000)
+    }
+  </script>
+</body>
+</html>

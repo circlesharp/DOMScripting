@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Skript and the Domsters</title>
+  <link rel="stylesheet" href="./styles/basic.css">
+</head>
+<body>
+  <!-- part 1 header -->
+  <header>
+    <img src="./images/logo.gif" alt="Jay Skript and the Domsters">
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Photos.html">Photo</a></li>
+        <li><a href="./Live.html">Live</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- part 2 article -->
+  <article>
+    <h1>Contact the band</h1>
+    <form action="./submit.html">
+      <fieldset>
+        <p>
+          <label for="name">Name:</label>
+          <input
+            id="name" name="name" type="text"
+            placeholder="Your name" required="required" autocomplete="off"
+          >
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input
+            id="email" name="email" type="email"
+            placeholder="Your email address" required="required" autocomplete="off"
+          >
+        </p>
+        <p>
+          <label for="message">Message:</label>
+          <textarea
+            id="message" name="message" cols="45" rows="7"
+            placeholder="Write your message here." required="required"
+          ></textarea>
+        </p>
+        <input type="submit" value="send">
+      </fieldset>
+    </form>
+  </article>
+  <script src="./scripts/global.js"></script>
+</body>
+</html>
